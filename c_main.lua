@@ -3,7 +3,7 @@ Healthbar = {};
 ESX = exports.es_extended:getSharedObject();
 
 function Healthbar:load()
-    while not LocalPlayer.state.isLoaded do 
+    while not ESX.IsPlayerLoaded() do 
         Citizen.Wait(250)
     end
 
